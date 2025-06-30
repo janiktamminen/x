@@ -1,8 +1,7 @@
-- hosts: "apt"
+- hosts: "emerge"
   become: yes
   become_method: sudo
   become_user: root
   tasks:
-    - name: emerge
       emerge:
         ansible.buildin.command: emerge --sync --quiet
