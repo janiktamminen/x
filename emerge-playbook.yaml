@@ -1,5 +1,5 @@
 - name: Sync Gentoo portage tree
-  hosts: emerge_hosts
+  hosts: emerge
   become: yes
   tasks:
     - name: run emerge quietly
