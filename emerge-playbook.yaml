@@ -1,5 +1,4 @@
-- name: Sync Gentoo portage tree
-  hosts: "emerge"
+- hosts: "apt"
   become: yes
   become_method: sudo
   become_user: root
