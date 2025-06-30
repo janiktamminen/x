@@ -1,6 +1,8 @@
 - name: Sync Gentoo portage tree
-  hosts: emerge
+  hosts: "emerge"
   become: yes
+  become_method: sudo
+  become_user: root
   tasks:
     - name: run emerge quietly
       ansible.buildin.command: emerge --sync --quiet
