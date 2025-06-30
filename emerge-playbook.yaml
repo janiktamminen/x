@@ -5,4 +5,4 @@
   tasks:
     - name: emerge
       emerge:
-      ansible.buildin.command: emerge --sync --quiet
+        ansible.buildin.command: emerge --sync --quiet
