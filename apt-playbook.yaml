@@ -1,9 +1,9 @@
-- hosts: "apt"
+- hosts: "apt-update"
   become: yes
   become_method: sudo
   become_user: root
   tasks:
-    - name: apt
+    - name: apt-update
       apt:
         update_cache: yes
         upgrade: 'yes'
