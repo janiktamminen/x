@@ -1,4 +1,4 @@
-- hosts: "apt-update"
+- hosts: "apt"
   become: yes
   become_method: sudo
   become_user: root
