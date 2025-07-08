@@ -8,7 +8,7 @@
         update_cache: yes
         upgrade: 'yes'
 - name: Notify discord
-  hosts: "{{ hosts | d([]) }}"
+  hosts: "apt"
   vars:
     notify_discord_username: ansible
     notify_discord_webhook_id: '1392108384391790642'
