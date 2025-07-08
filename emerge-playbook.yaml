@@ -4,7 +4,7 @@
   become_user: root
   tasks:
     - name: emerge-sync
-      emerge:
+      community.general.portage:
         sync: true
         
         
