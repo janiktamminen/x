@@ -3,5 +3,5 @@
   become_method: sudo
   become_user: root
 - name: Sync repositories
-        community.general.portage:
-        sync: true
+    community.general.portage:
+    sync: true
