@@ -5,4 +5,4 @@
   tasks:
     - name: Sync Portage tree quietly
       emerge:
-      ansible.builtin.command: emerge --sync --quiet
+        ansible.builtin.command: emerge --sync --quiet
