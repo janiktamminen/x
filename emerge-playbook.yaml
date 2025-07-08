@@ -4,4 +4,4 @@
   become_user: root
   tasks:
     - name: Sync Portage tree quietly
-        ansible.builtin.command: emerge --sync --quiet
+    ansible.builtin.command: emerge --sync --quiet
