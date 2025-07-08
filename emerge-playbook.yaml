@@ -1,7 +1,10 @@
-- name: Sync repositories
-    community.general.portage:
-    sync: true
 - hosts: "emerge"
   become: yes
   become_method: sudo
   become_user: root
+  tasks:
+    - name: emerge-sync
+      emerge:
+        sync: true
+        
+        
