@@ -3,6 +3,6 @@
   become_method: sudo
   become_user: root
   tasks:
-    emerge:
     - name: Sync Portage tree quietly
+      emerge:
       ansible.builtin.command: emerge --sync --quiet
