@@ -2,7 +2,6 @@
   become: yes
   become_method: sudo
   become_user: root
-  tasks:
-    - name: Sync repositories
+- name: Sync repositories
         community.general.portage:
         sync: true
