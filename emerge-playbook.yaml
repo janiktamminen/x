@@ -7,7 +7,7 @@
       community.general.portage:
         sync: true
 - name: Notify discord
-  hosts: "{{ my_hosts | d([]) }}"
+  hosts: "emerge"
   vars:
     notify_discord_username: ansible
     notify_discord_webhook_id: '1392108384391790642'
@@ -15,11 +15,7 @@
     notify_discord_webhook_id_regex: '^0|[1-9][0-9]*$'
     notify_discord_webhook_token_regex: '^[a-zA-Z0-9_-]+$'
     notify_discord_webhook_content: |-
-      **Message from `{{ inventory_hostname }}` by *Ansible* ** :tada:
-      Just a test, adjust it to your liking.
-
-      You can use any Markdown formatting here [supported by Discord](
-      https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline).
+      `{{ inventory_hostname }}` portage synced
     notify_discord_send_from_host: localhost
 
   tasks:
