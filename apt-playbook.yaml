@@ -16,8 +16,7 @@
     notify_discord_webhook_id_regex: '^0|[1-9][0-9]*$'
     notify_discord_webhook_token_regex: '^[a-zA-Z0-9_-]+$'
     notify_discord_webhook_content: |-
-      **Message from `{{ inventory_hostname }}` by *Ansible* ** :tada:
-      apt updated
+      `{{ inventory_hostname }}` apt updated
     notify_discord_send_from_host: localhost
 
   tasks:
